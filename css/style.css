@@ -1,0 +1,130 @@
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  list-style: none;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 5px;
+  max-width: 700px;
+}
+
+h2 {
+  text-align: center;
+  margin: 50px 0 10px 0;
+}
+
+img {
+  /* Máimo de 100% do container */
+  max-width: 100%;
+  /* display: block; */
+  border-radius: 3px;
+}
+
+.header {
+  background-color: #222;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .logo {
+  max-width: 200px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 5px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.menu li a:hover {
+  border-bottom: 3px solid #ff0000;
+}
+
+/* Banner Full */
+.full-banner {
+  background: url(../images/banner.jpg) no-repeat center center/cover;
+  height: 500px;
+  padding: 0 30px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria {
+  margin: 0 auto;
+  max-width: 1100px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galeria > div {
+  margin: 10px;
+  flex: 1 0 20%;
+}
+.galeria > img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  background-color: #222;
+  margin-top: 30px;
+  padding: 30px 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #999;
+}
+
+@media screen and (max-width: 768px) {
+  .full-banner {
+    height: 200px;
+  }
+  h1 {
+    display: none;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+}
